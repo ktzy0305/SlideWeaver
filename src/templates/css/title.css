@@ -1,0 +1,92 @@
+html {
+    background: #000000;
+}
+
+body {
+    width: 720pt;
+    height: 405pt;
+    margin: 0;
+    padding: 0;
+    font-family: Roboto, Arial, sans-serif;
+}
+
+.slide {
+    position: relative;
+    width: 720pt;
+    height: 405pt;
+    overflow: hidden;
+}
+
+.bg {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 720pt;
+    height: 405pt;
+    object-fit: cover;
+}
+
+.overlay {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 720pt;
+    height: 405pt;
+    background: rgba(0, 0, 0, 0.596);
+}
+
+.content {
+    position: absolute;
+    left: 35pt;
+    top: 150pt;
+    right: 40pt;
+    color: #FCEEE9;
+}
+
+.title {
+    font-size: 40pt;
+    font-weight: 400;
+    margin: 0;
+    letter-spacing: 0;
+}
+
+.line {
+    font-size: 20pt;
+    font-weight: 400;
+    margin: 10pt 0 0 0;
+    color: #FFFFFF;
+}
+
+.withDash::before {
+    content: "- ";
+}
+
+.dashOnly::before {
+    content: "-";
+}
+
+.tagline {
+    font-size: 16pt;
+    font-weight: 400;
+    margin: 18pt 0 0 0;
+    color: #FFFFFF;
+    max-width: 430pt;
+}
+
+.footer {
+    position: absolute;
+    left: 35pt;
+    bottom: 18pt;
+    right: 40pt;
+    font-size: 10pt;
+    color: #FFFFFF;
+    margin: 0;
+}
+
+.logo {
+    position: absolute;
+    left: 35pt;
+    top: 18pt;
+    width: 110pt;
+    height: auto;
+}

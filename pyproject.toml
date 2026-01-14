@@ -1,0 +1,10 @@
+[project]
+name = "powerpoint-generator"
+version = "0.1.0"
+description = "AI-powered PowerPoint generator using Strands agents"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "openai>=1.0.0",
+    "python-dotenv>=1.2.1",
+]

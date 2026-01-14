@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Title Slide</title>
+    <style>
+        body {
+            width: 960px;
+            height: 540px;
+            margin: 0;
+            padding: 40px;
+            box-sizing: border-box;
+            background: #4A5568;
+            color: white;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            overflow: hidden;
+        }
+        h1 {
+            font-size: 48px;
+            font-weight: 600;
+            margin: 0 0 20px 0;
+            line-height: 1.2;
+        }
+        .subtitle {
+            font-size: 24px;
+            margin: 10px 0;
+            opacity: 0.9;
+        }
+        .year {
+            font-size: 20px;
+            margin: 5px 0;
+            opacity: 0.8;
+        }
+        .tagline {
+            font-size: 16px;
+            margin-top: 30px;
+            opacity: 0.7;
+        }
+        .footer {
+            position: absolute;
+            bottom: 20px;
+            left: 40px;
+            right: 40px;
+            font-size: 12px;
+            opacity: 0.6;
+        }
+    </style>
+</head>
+<body>
+    <h1>{{TITLE_TEXT}}</h1>
+    <p class="subtitle">{{SUBTITLE_TEXT}}</p>
+    <p class="year">{{YEAR_TEXT}}</p>
+    <p class="tagline">{{TAGLINE_TEXT}}</p>
+    <p class="footer">{{FOOTER_TEXT}}</p>
+</body>
+</html>

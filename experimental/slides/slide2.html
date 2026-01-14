@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slide 2</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            width: 720pt;
+            height: 405pt;
+            padding: 24pt 48pt 36pt 48pt;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .table {
+            width: 100%;
+            margin-top: 20pt;
+        }
+
+        h1 {
+            font-size: 24pt;
+            font-weight: 700;
+            margin: 0 0 12pt 0;
+            color: #595959;
+        }
+        p {
+            font-size: 12pt;
+            margin: 0 0 16pt 0;
+            color: #333333;
+            line-height: 1.4;
+        }
+        /* Note: Tables are not yet supported by html2pptx */
+        table {
+            width: 100%;
+            margin-top: 16pt;
+            border-collapse: collapse;
+        }
+        th {
+            background-color: #2FA36B;
+            color: white;
+            padding: 8pt;
+            text-align: left;
+            font-weight: 600;
+            font-size: 10pt;
+        }
+        td {
+            padding: 8pt;
+            font-size: 10pt;
+        }
+        table, th, td {
+            border: 1pt solid #111;
+        }
+    </style>
+</head>
+<body>
+    <h1>Compliance Data Table</h1>
+    <p>
+        The table below shows compliance statistics across producer categories.
+    </p>
+    <!-- Note: This table will not render in PowerPoint yet - table support needs to be added to html2pptx -->
+    <table>
+        <thead>
+            <tr>
+                <th>Compliance Status</th>
+                <th>Number of Producers</th>
+                <th>Percentage</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Compliant</td>
+                <td>1,700</td>
+                <td>85%</td>
+            </tr>
+            <tr>
+                <td>Non-Compliant</td>
+                <td>300</td>
+                <td>15%</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

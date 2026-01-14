@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Table to PowerPoint Demo</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        h1 {
+            color: #333;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        th {
+            background-color: #4A5568;
+            color: white;
+            padding: 12px;
+            text-align: left;
+            font-weight: 600;
+            font-size: 12px;
+        }
+        td {
+            padding: 10px 12px;
+            border: 1px solid #ddd;
+            font-size: 12px;
+        }
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+        tr:hover {
+            background-color: #f5f5f5;
+        }
+        button {
+            background-color: #4A5568;
+            color: white;
+            padding: 12px 24px;
+            border: none;
+            border-radius: 4px;
+            font-size: 16px;
+            cursor: pointer;
+            margin: 20px 0;
+        }
+        button:hover {
+            background-color: #2D3748;
+        }
+    </style>
+</head>
+<body>
+    <h1>Risk Assessment Data</h1>
+    <p>Click the button below to generate a PowerPoint presentation from this table.</p>
+
+    <button onclick="generatePowerPoint()">Generate PowerPoint</button>
+
+    
+
+    <table id="riskTable">
+        <thead>
+            <tr>
+                <th>Assessment Type</th>
+                <th>Risk Level</th>
+                <th>Count</th>
+                <th>Percentage</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>land_legality_by_survey</td>
+                <td>Low Risk</td>
+                <td>245</td>
+                <td>81.67</td>
+            </tr>
+            <tr>
+                <td>land_legality_by_survey</td>
+                <td>High Risk</td>
+                <td>55</td>
+                <td>18.33</td>
+            </tr>
+            <tr>
+                <td>environmental_status_by_surveys</td>
+                <td>Low Risk</td>
+                <td>300</td>
+                <td>100.00</td>
+            </tr>
+            <tr>
+                <td>plot_status_by_surveys</td>
+                <td>Low Risk</td>
+                <td>245</td>
+                <td>81.67</td>
+            </tr>
+            <tr>
+                <td>plot_status_by_surveys</td>
+                <td>High Risk</td>
+                <td>55</td>
+                <td>18.33</td>
+            </tr>
+            <tr>
+                <td>fpic_status</td>
+                <td>Low Risk</td>
+                <td>300</td>
+                <td>100.00</td>
+            </tr>
+            <tr>
+                <td>human_labour_status</td>
+                <td>Low Risk</td>
+                <td>300</td>
+                <td>100.00</td>
+            </tr>
+            <tr>
+                <td>producer_final_status</td>
+                <td>Low Risk</td>
+                <td>300</td>
+                <td>100.00</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <script src="node_modules/pptxgenjs/dist/pptxgen.bundle.js"></script>
+    <script src="generate.js"></script>
+</body>
+</html>

@@ -1,0 +1,112 @@
+html {
+    background: #ffffff;
+}
+
+body {
+    width: 720pt;
+    height: 405pt;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+}
+
+.page {
+    position: relative;
+    width: 720pt;
+    height: 405pt;
+    box-sizing: border-box;
+    /* Keep at least a 0.5" bottom margin for html2pptx overflow checks */
+    padding: 24pt 32pt 32pt 32pt;
+}
+
+.contentLogo {
+    position: absolute;
+    top: 18pt;
+    right: 32pt;
+    height: 20pt;
+    width: auto;
+    object-fit: contain;
+}
+
+.footnote {
+    position: absolute;
+    left: 32pt;
+    bottom: 14pt;
+    right: 32pt;
+    font-size: 7pt;
+    color: #595959;
+    margin: 0;
+}
+
+.h1 {
+    font-size: 24pt;
+    font-weight: 700;
+    margin: 0 0 10pt 0;
+    color: #595959;
+}
+
+.h2 {
+    font-size: 17pt;
+    font-weight: 700;
+    margin: 0 0 8pt 0;
+}
+
+.p {
+    font-size: 13pt;
+    margin: 0;
+    line-height: 17pt;
+}
+
+.pSm {
+    font-size: 11pt;
+    margin: 0;
+    line-height: 15pt;
+}
+
+.gridLR {
+    display: flex;
+    gap: 14pt;
+    align-items: flex-start;
+}
+
+.imgCol {
+    width: 300pt;
+    min-height: 220pt;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.txtCol {
+    width: 340pt;
+    min-height: 220pt;
+}
+
+.imgLR {
+    display: block;
+    width: 300pt;
+    height: 220pt;
+    object-fit: contain;
+    object-position: center top;
+}
+
+.stack {
+    display: flex;
+    flex-direction: column;
+    gap: 10pt;
+}
+
+.imgCenterWrap {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.imgStack {
+    display: block;
+    width: 500pt;
+    height: 220pt;
+    object-fit: contain;
+    object-position: center top;
+}
