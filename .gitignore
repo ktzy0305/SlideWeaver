@@ -249,3 +249,6 @@ tmp/
 # Output files
 output/
 *.pptx
+
+# Session files
+sessions/

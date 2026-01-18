@@ -1,5 +1,0 @@
-provider: openai
-
-slide_planner_agent:
-  model: gpt-5-mini
-  system_prompt_path: src/prompts/slide_planner/system_prompt.md

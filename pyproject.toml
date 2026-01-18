@@ -1,10 +1,25 @@
 [project]
-name = "powerpoint-generator"
+name = "slideweaver"
 version = "0.1.0"
-description = "AI-powered PowerPoint generator using Strands agents"
+description = "AI-powered presentation generator that weaves your ideas into beautiful slide decks"
 readme = "README.md"
 requires-python = ">=3.11"
 dependencies = [
     "openai>=1.0.0",
     "python-dotenv>=1.2.1",
+    "strands-agents[openai]>=1.0.0",
+    "strands-agents-tools>=0.1.0",
+    "pydantic>=2.0.0",
+    "fastapi[standard]>=0.100.0",
+    "uvicorn>=0.23.0",
+    "python-multipart>=0.0.6",
+    "aiofiles>=23.0.0",
+    "streamlit>=1.30.0",
+    "pyyaml>=6.0",
 ]
+
+[project.scripts]
+slideweaver = "cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
